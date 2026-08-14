@@ -290,3 +290,101 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+
+// ==========================================
+// MENU MOBILE
+// ==========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+    if (!mobileMenuBtn || !mobileMenu) return;
+
+    function toggleMobileMenu() {
+
+        const isOpen = !mobileMenu.classList.contains('hidden');
+
+        if (isOpen) {
+            // Fechar
+            mobileMenu.classList.add('hidden');
+
+            mobileMenuIcon.classList.remove('fa-xmark');
+            mobileMenuIcon.classList.add('fa-bars');
+
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenuBtn.setAttribute('aria-label', 'Abrir menu');
+
+        } else {
+            // Abrir
+            mobileMenu.classList.remove('hidden');
+
+            mobileMenuIcon.classList.remove('fa-bars');
+            mobileMenuIcon.classList.add('fa-xmark');
+
+            mobileMenuBtn.setAttribute('aria-expanded', 'true');
+            mobileMenuBtn.setAttribute('aria-label', 'Fechar menu');
+        }
+    }
+
+    // Abrir / fechar menu
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+
+    // Fechar menu ao clicar em um link
+    mobileMenuLinks.forEach(link => {
+
+        link.addEventListener('click', () => {
+
+            mobileMenu.classList.add('hidden');
+
+            mobileMenuIcon.classList.remove('fa-xmark');
+            mobileMenuIcon.classList.add('fa-bars');
+
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenuBtn.setAttribute('aria-label', 'Abrir menu');
+
+        });
+
+    });
+
+
+    // Fechar menu ao pressionar ESC
+    document.addEventListener('keydown', (event) => {
+
+        if (event.key === 'Escape') {
+
+            mobileMenu.classList.add('hidden');
+
+            mobileMenuIcon.classList.remove('fa-xmark');
+            mobileMenuIcon.classList.add('fa-bars');
+
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenuBtn.setAttribute('aria-label', 'Abrir menu');
+
+        }
+
+    });
+
+
+    // Fechar menu ao voltar para desktop
+    window.addEventListener('resize', () => {
+
+        if (window.innerWidth >= 768) {
+
+            mobileMenu.classList.add('hidden');
+
+            mobileMenuIcon.classList.remove('fa-xmark');
+            mobileMenuIcon.classList.add('fa-bars');
+
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+
+        }
+
+    });
+
+});
