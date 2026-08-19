@@ -57,12 +57,16 @@
 
     <!-- Header / Navbar -->
     <header class="fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3">
 
-            <!-- Logo -->
-            <a href="#inicio" class="text-2xl font-bold flex items-center gap-2">
-                <i class="fa-solid fa-rocket text-primary"></i>
-                PrimeMarke
+            <a href="#inicio" class="text-xl sm:text-2xl font-bold flex items-center gap-2 min-w-0 shrink">
+
+                <i class="fa-solid fa-rocket text-primary shrink-0"></i>
+
+                <span class="truncate">
+                    PrimeMarke
+                </span>
+
             </a>
 
             <!-- Desktop Menu -->
@@ -106,10 +110,10 @@
             </div>
 
             <!-- Controles Mobile -->
-            <div class="md:hidden flex items-center gap-3">
+            <div class="md:hidden flex items-center gap-2 shrink-0">
 
                 <!-- Idiomas -->
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-1.5 shrink-0">
 
                     <!-- Português -->
                     <button
@@ -135,10 +139,10 @@
 
                 <!-- Botão Menu -->
                 <button id="mobile-menu-btn" type="button"
-                    class="w-11 h-11 rounded-lg bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-primary transition-all duration-300"
+                    class="w-10 h-10 shrink-0 rounded-lg bg-white/5 border border-white/10 text-white flex items-center justify-center hover:bg-primary transition-all duration-300"
                     aria-label="Abrir menu" aria-expanded="false">
 
-                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
 
                 </button>
 
