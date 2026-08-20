@@ -388,3 +388,81 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+
+// ==========================================
+// FILTRO BLOG
+// ==========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const filterButtons = document.querySelectorAll('.blog-filter-btn');
+    const blogItems = document.querySelectorAll('.blog-item');
+
+    if (!filterButtons.length || !blogItems.length) {
+        return;
+    }
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener('click', () => {
+
+            const filter = button.getAttribute('data-blog-filter');
+
+
+            // Remove estilo ativo dos botões
+            filterButtons.forEach(btn => {
+
+                btn.classList.remove(
+                    'bg-primary',
+                    'text-white',
+                    'border-primary',
+                    'shadow-[0_0_15px_rgba(59,130,246,0.4)]'
+                );
+
+                btn.classList.add(
+                    'glass',
+                    'text-grayLight',
+                    'border-white/20'
+                );
+
+            });
+
+
+            // Ativa botão clicado
+            button.classList.remove(
+                'glass',
+                'text-grayLight',
+                'border-white/20'
+            );
+
+            button.classList.add(
+                'bg-primary',
+                'text-white',
+                'border-primary',
+                'shadow-[0_0_15px_rgba(59,130,246,0.4)]'
+            );
+
+
+            // Filtrar artigos
+            blogItems.forEach(item => {
+
+                const category = item.getAttribute('data-blog-category');
+
+                if (filter === 'all' || category === filter) {
+
+                    item.style.display = '';
+
+                } else {
+
+                    item.style.display = 'none';
+
+                }
+
+            });
+
+        });
+
+    });
+
+});

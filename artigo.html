@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Como criar um site profissional para sua empresa em 2026 | PrimeMarke</title>
+
+    <meta name="description"
+        content="Descubra os principais elementos para criar um site profissional, responsivo, rápido e preparado para gerar resultados para sua empresa.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Como criar um site profissional para sua empresa em 2026">
+    <meta property="og:description"
+        content="Veja os principais elementos que tornam um site profissional, confiável e preparado para gerar resultados.">
+    <meta property="og:type" content="article">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        darkBlue: '#1E3A8A',
+                        lightBlue: '#60A5FA',
+                        bgMain: '#050816',
+                        bgSec: '#0F172A',
+                        grayLight: '#E5E7EB'
+                    },
+
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonte -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        rel="stylesheet">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: #050816;
+            color: white;
+        }
+
+        /* Conteúdo do artigo */
+
+        .article-content {
+            color: #d1d5db;
+            line-height: 1.9;
+            font-size: 1.05rem;
+        }
+
+        .article-content h2 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            scroll-margin-top: 120px;
+        }
+
+        .article-content h3 {
+            color: white;
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: .8rem;
+            scroll-margin-top: 120px;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .article-content li {
+            position: relative;
+            padding-left: 1.7rem;
+            margin-bottom: .8rem;
+        }
+
+        .article-content li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #3B82F6;
+            font-weight: 700;
+        }
+
+        .article-content strong {
+            color: white;
+        }
+
+        .article-content blockquote {
+            margin: 2.5rem 0;
+            padding: 1.5rem 1.8rem;
+            border-left: 4px solid #3B82F6;
+            background: rgba(255, 255, 255, .04);
+            border-radius: 0 1rem 1rem 0;
+            color: #e5e7eb;
+        }
+
+        .article-content a {
+            color: #60A5FA;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        .toc-link.active {
+            color: #3B82F6;
+        }
+
+        .share-btn {
+            transition:
+                transform .25s ease,
+                background .25s ease,
+                border-color .25s ease;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px);
+            border-color: rgba(59, 130, 246, .7);
+            background: rgba(59, 130, 246, .12);
+        }
+    </style>
+
+</head>
+
+<body class="antialiased selection:bg-primary selection:text-white">
+
+
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
+
+    <header
+        id="navbar"
+        class="fixed top-0 left-0 w-full z-50 bg-bgMain/90 backdrop-blur-xl border-b border-white/5">
+
+        <div
+            class="w-full max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3">
+
+            <!-- Logo -->
+
+            <a
+                href="index.html"
+                class="text-xl sm:text-2xl font-bold flex items-center gap-2 min-w-0 shrink">
+
+                <i class="fa-solid fa-rocket text-primary shrink-0"></i>
+
+                <span class="truncate">
+                    PrimeMarke
+                </span>
+
+            </a>
+
+
+            <!-- Menu Desktop -->
+
+            <nav
+                class="hidden md:flex gap-6 text-grayLight text-sm font-medium">
+
+                <a
+                    href="index.html#inicio"
+                    class="hover:text-primary transition">
+                    Início
+                </a>
+
+                <a
+                    href="index.html#sobre"
+                    class="hover:text-primary transition">
+                    Sobre
+                </a>
+
+                <a
+                    href="index.html#servicos"
+                    class="hover:text-primary transition">
+                    Serviços
+                </a>
+
+                <a
+                    href="index.html#portfolio"
+                    class="hover:text-primary transition">
+                    Portfólio
+                </a>
+
+                <a
+                    href="blog.html"
+                    class="text-primary">
+                    Blog
+                </a>
+
+                <a
+                    href="index.html#contato"
+                    class="hover:text-primary transition">
+                    Contato
+                </a>
+
+            </nav>
+
+
+            <!-- Desktop -->
+
+            <div
+                class="hidden md:flex items-center gap-5">
+
+                <!-- Idiomas -->
+
+                <div class="flex items-center gap-2">
+
+                    <button
+                        class="lang-btn rounded-full border-2 border-primary transition hover:scale-110"
+                        data-lang="pt"
+                        title="Português">
+
+                        <img
+                            src="https://flagcdn.com/w40/br.png"
+                            alt="Português"
+                            class="w-6 h-6 object-cover rounded-full">
+
+                    </button>
+
+                    <button
+                        class="lang-btn rounded-full border-2 border-transparent opacity-50 grayscale transition hover:scale-110 hover:opacity-100 hover:grayscale-0"
+                        data-lang="en"
+                        title="English">
+
+                        <img
+                            src="https://flagcdn.com/w40/us.png"
+                            alt="English"
+                            class="w-6 h-6 object-cover rounded-full">
+
+                    </button>
+
+                </div>
+
+
+                <!-- WhatsApp -->
+
+                <a
+                    href="index.html#contato"
+                    class="inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full font-semibold glow-btn text-sm">
+
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+
+                    Falar no WhatsApp
+
+                </a>
+
+            </div>
+
+
+            <!-- Mobile -->
+
+            <div
+                class="md:hidden flex items-center gap-2 shrink-0">
+
+                <!-- Idiomas -->
+
+                <div
+                    class="flex items-center gap-1.5">
+
+                    <button
+                        class="lang-btn rounded-full border-2 border-primary"
+                        data-lang="pt">
+
+                        <img
+                            src="https://flagcdn.com/w40/br.png"
+                            alt="PT"
+                            class="w-6 h-6 object-cover rounded-full">
+
+                    </button>
+
+                    <button
+                        class="lang-btn rounded-full border-2 border-transparent opacity-50 grayscale"
+                        data-lang="en">
+
+                        <img
+                            src="https://flagcdn.com/w40/us.png"
+                            alt="EN"
+                            class="w-6 h-6 object-cover rounded-full">
+
+                    </button>
+
+                </div>
+
+
+                <!-- Menu Mobile Button -->
+
+                <button
+                    id="mobile-menu-btn"
+                    type="button"
+                    class="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center">
+
+                    <i
+                        id="mobile-menu-icon"
+                        class="fa-solid fa-bars">
+                    </i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Menu Mobile -->
+
+        <div
+            id="mobile-menu"
+            class="hidden md:hidden border-t border-white/10 bg-bgMain/95">
+
+            <nav
+                class="max-w-7xl mx-auto px-4 py-5 flex flex-col gap-2">
+
+                <a
+                    href="index.html#inicio"
+                    class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
+                    Início
+                </a>
+
+                <a
+                    href="index.html#sobre"
+                    class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
+                    Sobre
+                </a>
+
+                <a
+                    href="index.html#servicos"
+                    class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
+                    Serviços
+                </a>
+
+                <a
+                    href="index.html#portfolio"
+                    class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
+                    Portfólio
+                </a>
+
+                <a
+                    href="blog.html"
+                    class="mobile-menu-link px-4 py-3 rounded-lg bg-primary/10 text-primary">
+                    Blog
+                </a>
+
+                <a
+                    href="index.html#contato"
+                    class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
+                    Contato
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ============================= -->
+    <!-- HERO ARTIGO -->
+    <!-- ============================= -->
+
+    <main>
+
+        <section
+            class="relative pt-36 md:pt-44 pb-14 overflow-hidden">
+
+            <!-- Glow -->
+
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-primary/10 rounded-full blur-[130px]">
+            </div>
+
+
+            <div
+                class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+
+
+                <!-- Breadcrumb -->
+
+                <div
+                    class="flex flex-wrap items-center gap-2 text-sm text-grayLight mb-8"
+                    data-aos="fade-up">
+
+                    <a
+                        href="index.html"
+                        class="hover:text-primary transition">
+
+                        Início
+
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+
+                    <a
+                        href="blog.html"
+                        class="hover:text-primary transition">
+
+                        Blog
+
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+
+                    <span class="text-primary">
+
+                        Desenvolvimento
+
+                    </span>
+
+                </div>
+
+
+                <!-- Categoria -->
+
+                <span
+                    class="inline-flex items-center gap-2 bg-primary/10 text-primary border border-primary/20 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6"
+                    data-aos="fade-up">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    Desenvolvimento Web
+
+                </span>
+
+
+                <!-- Título -->
+
+                <h1
+                    class="text-4xl md:text-6xl font-bold leading-tight mb-7 max-w-4xl"
+                    data-aos="fade-up"
+                    data-aos-delay="50">
+
+                    Como criar um site profissional para sua empresa em 2026
+
+                </h1>
+
+
+                <!-- Resumo -->
+
+                <p
+                    class="text-lg md:text-xl text-grayLight leading-relaxed max-w-3xl mb-8"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    Descubra os principais elementos que fazem um site transmitir
+                    credibilidade, melhorar a experiência do visitante e gerar
+                    novas oportunidades para uma empresa.
+
+                </p>
+
+
+                <!-- Meta -->
+
+                <div
+                    class="flex flex-wrap items-center gap-5 text-sm text-grayLight"
+                    data-aos="fade-up"
+                    data-aos-delay="150">
+
+                    <span
+                        class="flex items-center gap-2">
+
+                        <i class="fa-regular fa-user text-primary"></i>
+
+                        PrimeMarke
+
+                    </span>
+
+                    <span
+                        class="flex items-center gap-2">
+
+                        <i class="fa-regular fa-calendar text-primary"></i>
+
+                        20 de agosto de 2026
+
+                    </span>
+
+                    <span
+                        class="flex items-center gap-2">
+
+                        <i class="fa-regular fa-clock text-primary"></i>
+
+                        6 min de leitura
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- CAPA -->
+        <!-- ============================= -->
+
+        <section class="pb-16">
+
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6"
+                data-aos="fade-up">
+
+                <div
+                    class="relative h-[300px] md:h-[520px] rounded-3xl overflow-hidden border border-white/10">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=85"
+                        alt="Desenvolvimento de site profissional"
+                        class="w-full h-full object-cover">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-bgMain/60 via-transparent to-transparent">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- CONTEÚDO -->
+        <!-- ============================= -->
+
+        <section class="pb-24">
+
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6">
+
+                <div
+                    class="grid lg:grid-cols-[1fr_300px] gap-12">
+
+
+                    <!-- ============================= -->
+                    <!-- ARTIGO -->
+                    <!-- ============================= -->
+
+                    <article
+                        class="article-content max-w-3xl"
+                        data-aos="fade-up">
+
+
+                        <p>
+
+                            Ter um site profissional deixou de ser apenas um
+                            diferencial para empresas. Em muitos casos, o site é
+                            o primeiro contato que um potencial cliente terá
+                            com uma marca.
+
+                        </p>
+
+
+                        <p>
+
+                            Uma página lenta, desorganizada ou que não funciona
+                            corretamente no celular pode fazer o visitante sair
+                            antes mesmo de conhecer seus produtos ou serviços.
+
+                        </p>
+
+
+                        <blockquote>
+
+                            Um bom site não deve apenas ser bonito. Ele precisa
+                            transmitir confiança, ser fácil de usar e ajudar o
+                            visitante a encontrar rapidamente aquilo que procura.
+
+                        </blockquote>
+
+
+
+                        <!-- SEÇÃO 1 -->
+
+                        <h2 id="planejamento">
+
+                            1. Comece com um bom planejamento
+
+                        </h2>
+
+
+                        <p>
+
+                            Antes de pensar em cores, imagens e animações, é
+                            importante entender qual é o objetivo principal do
+                            projeto.
+
+                        </p>
+
+
+                        <p>
+
+                            Uma empresa pode criar um site para apresentar
+                            serviços, captar contatos, receber pedidos, divulgar
+                            um portfólio ou vender produtos.
+
+                        </p>
+
+
+                        <p>
+                            Algumas perguntas ajudam nessa etapa:
+                        </p>
+
+
+                        <ul>
+
+                            <li>Quem é o público que irá acessar o site?</li>
+
+                            <li>Qual ação queremos que o visitante realize?</li>
+
+                            <li>Quais informações são realmente importantes?</li>
+
+                            <li>Quais páginas o projeto precisa ter?</li>
+
+                            <li>O site precisará de integrações?</li>
+
+                        </ul>
+
+
+
+                        <!-- SEÇÃO 2 -->
+
+                        <h2 id="design">
+
+                            2. Tenha um design profissional
+
+                        </h2>
+
+
+                        <p>
+
+                            O visual de um site influencia diretamente na
+                            percepção de valor de uma empresa.
+
+                        </p>
+
+
+                        <p>
+
+                            Por isso, o layout precisa seguir uma identidade
+                            visual consistente, utilizando cores, tipografia,
+                            ícones e elementos que combinem com o posicionamento
+                            da marca.
+
+                        </p>
+
+
+                        <h3 id="hierarquia">
+
+                            Hierarquia visual
+
+                        </h3>
+
+
+                        <p>
+
+                            O visitante deve identificar rapidamente quais são
+                            os elementos mais importantes da página.
+
+                        </p>
+
+
+                        <p>
+
+                            Títulos maiores, chamadas claras, espaços bem
+                            distribuídos e botões destacados ajudam a conduzir
+                            a navegação.
+
+                        </p>
+
+
+
+                        <!-- SEÇÃO 3 -->
+
+                        <h2 id="responsivo">
+
+                            3. O site precisa funcionar perfeitamente no celular
+
+                        </h2>
+
+
+                        <p>
+
+                            Atualmente, grande parte dos acessos à internet
+                            acontece através de smartphones.
+
+                        </p>
+
+
+                        <p>
+
+                            Por isso, desenvolver um site responsivo não é
+                            opcional.
+
+                        </p>
+
+
+                        <p>
+
+                            O conteúdo deve se adaptar automaticamente a
+                            diferentes tamanhos de tela.
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>Textos precisam continuar legíveis.</li>
+
+                            <li>Botões devem ser fáceis de clicar.</li>
+
+                            <li>Imagens não podem ultrapassar a tela.</li>
+
+                            <li>Menus precisam funcionar corretamente.</li>
+
+                            <li>O usuário não deve precisar dar zoom.</li>
+
+                        </ul>
+
+
+
+                        <!-- SEÇÃO 4 -->
+
+                        <h2 id="velocidade">
+
+                            4. Velocidade faz diferença
+
+                        </h2>
+
+
+                        <p>
+
+                            Um site que demora para carregar pode prejudicar a
+                            experiência do visitante.
+
+                        </p>
+
+
+                        <p>
+
+                            Alguns cuidados ajudam a melhorar a performance:
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>Comprimir imagens.</li>
+
+                            <li>Evitar arquivos desnecessariamente grandes.</li>
+
+                            <li>Reduzir scripts que não são utilizados.</li>
+
+                            <li>Escolher uma boa hospedagem.</li>
+
+                            <li>Utilizar cache quando necessário.</li>
+
+                        </ul>
+
+
+
+                        <!-- SEÇÃO 5 -->
+
+                        <h2 id="seo">
+
+                            5. Pense também em SEO
+
+                        </h2>
+
+
+                        <p>
+
+                            SEO é o conjunto de técnicas utilizadas para ajudar
+                            mecanismos de busca a entenderem o conteúdo de um
+                            site.
+
+                        </p>
+
+
+                        <p>
+
+                            Uma estrutura bem organizada facilita a indexação
+                            das páginas e pode contribuir para que potenciais
+                            clientes encontrem a empresa através de pesquisas.
+
+                        </p>
+
+
+                        <p>
+                            Entre alguns cuidados básicos estão:
+                        </p>
+
+
+                        <ul>
+
+                            <li>Utilizar títulos claros.</li>
+
+                            <li>Criar URLs organizadas.</li>
+
+                            <li>Adicionar meta descriptions.</li>
+
+                            <li>Utilizar textos relevantes.</li>
+
+                            <li>Otimizar imagens.</li>
+
+                            <li>Ter boa velocidade de carregamento.</li>
+
+                        </ul>
+
+
+
+                        <!-- SEÇÃO 6 -->
+
+                        <h2 id="conversao">
+
+                            6. Tenha chamadas para ação
+
+                        </h2>
+
+
+                        <p>
+
+                            Um site empresarial precisa deixar claro o próximo
+                            passo que o visitante pode tomar.
+
+                        </p>
+
+
+                        <p>
+
+                            Dependendo do negócio, esse próximo passo pode ser:
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>Solicitar um orçamento.</li>
+
+                            <li>Entrar em contato pelo WhatsApp.</li>
+
+                            <li>Agendar uma consulta.</li>
+
+                            <li>Comprar um produto.</li>
+
+                            <li>Preencher um formulário.</li>
+
+                            <li>Conhecer o portfólio.</li>
+
+                        </ul>
+
+
+                        <p>
+
+                            Botões de ação precisam estar em locais estratégicos
+                            e utilizar textos claros.
+
+                        </p>
+
+
+
+                        <!-- SEÇÃO 7 -->
+
+                        <h2 id="conclusao">
+
+                            7. Um site deve trabalhar a favor do negócio
+
+                        </h2>
+
+
+                        <p>
+
+                            Criar um site profissional envolve muito mais do que
+                            escolher um layout bonito.
+
+                        </p>
+
+
+                        <p>
+
+                            É necessário pensar em experiência do usuário,
+                            responsividade, velocidade, conteúdo, SEO e
+                            conversão.
+
+                        </p>
+
+
+                        <p>
+
+                            Quando esses elementos trabalham juntos, o site
+                            passa a funcionar como uma verdadeira ferramenta
+                            para fortalecer a presença digital da empresa.
+
+                        </p>
+
+
+                        <!-- Compartilhar -->
+
+                        <div
+                            class="mt-16 pt-8 border-t border-white/10">
+
+                            <p
+                                class="text-white font-semibold mb-5">
+
+                                Compartilhe este artigo
+
+                            </p>
+
+
+                            <div
+                                class="flex flex-wrap gap-3">
+
+
+                                <button
+                                    class="share-btn w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center"
+                                    data-share="whatsapp"
+                                    aria-label="Compartilhar no WhatsApp">
+
+                                    <i
+                                        class="fa-brands fa-whatsapp">
+                                    </i>
+
+                                </button>
+
+
+                                <button
+                                    class="share-btn w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center"
+                                    data-share="facebook"
+                                    aria-label="Compartilhar no Facebook">
+
+                                    <i
+                                        class="fa-brands fa-facebook-f">
+                                    </i>
+
+                                </button>
+
+
+                                <button
+                                    class="share-btn w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center"
+                                    data-share="linkedin"
+                                    aria-label="Compartilhar no LinkedIn">
+
+                                    <i
+                                        class="fa-brands fa-linkedin-in">
+                                    </i>
+
+                                </button>
+
+
+                                <button
+                                    id="copy-link"
+                                    class="share-btn inline-flex items-center gap-2 h-11 px-4 rounded-full border border-white/10 bg-white/5">
+
+                                    <i class="fa-solid fa-link"></i>
+
+                                    <span class="text-sm">
+                                        Copiar link
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ============================= -->
+                    <!-- SIDEBAR -->
+                    <!-- ============================= -->
+
+                    <aside class="hidden lg:block">
+
+                        <div
+                            class="sticky top-28 space-y-6">
+
+
+                            <!-- Sumário -->
+
+                            <div
+                                class="glass-card border border-white/10 rounded-2xl p-6">
+
+                                <div
+                                    class="flex items-center gap-2 mb-5">
+
+                                    <i
+                                        class="fa-solid fa-list text-primary">
+                                    </i>
+
+                                    <h3 class="font-bold">
+
+                                        Neste artigo
+
+                                    </h3>
+
+                                </div>
+
+
+                                <nav
+                                    class="flex flex-col gap-3 text-sm text-grayLight">
+
+                                    <a
+                                        href="#planejamento"
+                                        class="toc-link hover:text-primary transition">
+
+                                        1. Planejamento
+
+                                    </a>
+
+                                    <a
+                                        href="#design"
+                                        class="toc-link hover:text-primary transition">
+
+                                        2. Design profissional
+
+                                    </a>
+
+                                    <a
+                                        href="#responsivo"
+                                        class="toc-link hover:text-primary transition">
+
+                                        3. Site responsivo
+
+                                    </a>
+
+                                    <a
+                                        href="#velocidade"
+                                        class="toc-link hover:text-primary transition">
+
+                                        4. Velocidade
+
+                                    </a>
+
+                                    <a
+                                        href="#seo"
+                                        class="toc-link hover:text-primary transition">
+
+                                        5. SEO
+
+                                    </a>
+
+                                    <a
+                                        href="#conversao"
+                                        class="toc-link hover:text-primary transition">
+
+                                        6. Conversão
+
+                                    </a>
+
+                                    <a
+                                        href="#conclusao"
+                                        class="toc-link hover:text-primary transition">
+
+                                        7. Conclusão
+
+                                    </a>
+
+                                </nav>
+
+                            </div>
+
+
+                            <!-- Mini CTA -->
+
+                            <div
+                                class="glass-card border border-primary/20 rounded-2xl p-6 relative overflow-hidden">
+
+                                <div
+                                    class="absolute -top-16 -right-16 w-36 h-36 rounded-full bg-primary/20 blur-3xl">
+                                </div>
+
+
+                                <div class="relative z-10">
+
+                                    <div
+                                        class="w-11 h-11 bg-primary/15 rounded-xl flex items-center justify-center text-primary mb-4">
+
+                                        <i
+                                            class="fa-solid fa-rocket">
+                                        </i>
+
+                                    </div>
+
+
+                                    <h3
+                                        class="font-bold text-lg mb-3">
+
+                                        Precisa de um site profissional?
+
+                                    </h3>
+
+
+                                    <p
+                                        class="text-grayLight text-sm leading-relaxed mb-5">
+
+                                        Criamos soluções digitais modernas,
+                                        responsivas e focadas em resultados.
+
+                                    </p>
+
+
+                                    <a
+                                        href="index.html#contato"
+                                        class="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:text-lightBlue">
+
+                                        Solicitar orçamento
+
+                                        <i
+                                            class="fa-solid fa-arrow-right text-xs">
+                                        </i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- CTA PRINCIPAL -->
+        <!-- ============================= -->
+
+        <section class="py-20 bg-bgSec border-y border-white/5">
+
+            <div
+                class="max-w-5xl mx-auto px-4 sm:px-6">
+
+                <div
+                    class="glass-card border border-white/10 rounded-3xl p-8 md:p-14 text-center relative overflow-hidden"
+                    data-aos="fade-up">
+
+
+                    <div
+                        class="absolute -top-28 -right-28 w-72 h-72 bg-primary/20 rounded-full blur-[100px]">
+                    </div>
+
+
+                    <div
+                        class="absolute -bottom-28 -left-28 w-72 h-72 bg-darkBlue/30 rounded-full blur-[100px]">
+                    </div>
+
+
+                    <div
+                        class="relative z-10">
+
+
+                        <span
+                            class="text-primary uppercase tracking-wider text-sm font-semibold">
+
+                            PrimeMarke
+
+                        </span>
+
+
+                        <h2
+                            class="text-3xl md:text-4xl font-bold mt-3 mb-5">
+
+                            Sua empresa também pode ter uma presença digital profissional
+
+                        </h2>
+
+
+                        <p
+                            class="text-grayLight max-w-2xl mx-auto mb-8 leading-relaxed">
+
+                            Desenvolvemos sites, landing pages, lojas virtuais,
+                            catálogos digitais e páginas de links pensadas para
+                            fortalecer sua marca.
+
+                        </p>
+
+
+                        <a
+                            href="index.html#contato"
+                            class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold glow-btn">
+
+                            <i
+                                class="fa-brands fa-whatsapp">
+                            </i>
+
+                            Solicitar orçamento
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- RELACIONADOS -->
+        <!-- ============================= -->
+
+        <section class="py-24 bg-bgMain">
+
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6">
+
+
+                <div
+                    class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12"
+                    data-aos="fade-up">
+
+                    <div>
+
+                        <span
+                            class="text-primary uppercase tracking-wider text-sm font-semibold">
+
+                            Continue aprendendo
+
+                        </span>
+
+                        <h2
+                            class="text-3xl md:text-4xl font-bold mt-2">
+
+                            Artigos relacionados
+
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        href="blog.html"
+                        class="text-grayLight hover:text-primary transition inline-flex items-center gap-2">
+
+                        Ver todos
+
+                        <i
+                            class="fa-solid fa-arrow-right text-sm">
+                        </i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Cards -->
+
+                <div
+                    class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                    <!-- Relacionado 1 -->
+
+                    <article
+                        class="glass-card border border-white/10 rounded-2xl overflow-hidden group hover-glow transition"
+                        data-aos="fade-up">
+
+                        <div
+                            class="h-52 overflow-hidden">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=900&q=80"
+                                alt="Site Responsivo"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <span
+                                class="text-primary text-xs uppercase font-bold tracking-wider">
+
+                                Desenvolvimento
+
+                            </span>
+
+
+                            <h3
+                                class="text-xl font-bold mt-3 mb-3 leading-snug">
+
+                                Por que sua empresa precisa de um site responsivo?
+
+                            </h3>
+
+
+                            <p
+                                class="text-grayLight text-sm mb-5">
+
+                                Entenda a importância de oferecer uma experiência
+                                profissional em celulares.
+
+                            </p>
+
+
+                            <a
+                                href="artigo.html"
+                                class="text-sm font-semibold inline-flex items-center gap-2 hover:text-primary">
+
+                                Ler artigo
+
+                                <i
+                                    class="fa-solid fa-chevron-right text-xs">
+                                </i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Relacionado 2 -->
+
+                    <article
+                        class="glass-card border border-white/10 rounded-2xl overflow-hidden group hover-glow transition"
+                        data-aos="fade-up"
+                        data-aos-delay="100">
+
+                        <div
+                            class="h-52 overflow-hidden">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+                                alt="Marketing Digital"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <span
+                                class="text-primary text-xs uppercase font-bold tracking-wider">
+
+                                Marketing
+
+                            </span>
+
+
+                            <h3
+                                class="text-xl font-bold mt-3 mb-3 leading-snug">
+
+                                7 estratégias para melhorar sua presença digital
+
+                            </h3>
+
+
+                            <p
+                                class="text-grayLight text-sm mb-5">
+
+                                Veja maneiras práticas de fortalecer sua marca
+                                no ambiente digital.
+
+                            </p>
+
+
+                            <a
+                                href="artigo.html"
+                                class="text-sm font-semibold inline-flex items-center gap-2 hover:text-primary">
+
+                                Ler artigo
+
+                                <i
+                                    class="fa-solid fa-chevron-right text-xs">
+                                </i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Relacionado 3 -->
+
+                    <article
+                        class="glass-card border border-white/10 rounded-2xl overflow-hidden group hover-glow transition"
+                        data-aos="fade-up"
+                        data-aos-delay="200">
+
+                        <div
+                            class="h-52 overflow-hidden">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80"
+                                alt="Inteligência Artificial"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <span
+                                class="text-primary text-xs uppercase font-bold tracking-wider">
+
+                                Inteligência Artificial
+
+                            </span>
+
+
+                            <h3
+                                class="text-xl font-bold mt-3 mb-3 leading-snug">
+
+                                Como a IA pode ajudar pequenas empresas
+
+                            </h3>
+
+
+                            <p
+                                class="text-grayLight text-sm mb-5">
+
+                                Descubra aplicações práticas de inteligência
+                                artificial no dia a dia dos negócios.
+
+                            </p>
+
+
+                            <a
+                                href="artigo.html"
+                                class="text-sm font-semibold inline-flex items-center gap-2 hover:text-primary">
+
+                                Ler artigo
+
+                                <i
+                                    class="fa-solid fa-chevron-right text-xs">
+                                </i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+    <footer
+        class="bg-bgSec pt-16 pb-8 border-t border-white/10">
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-4 gap-12 mb-12">
+
+
+            <!-- Marca -->
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="text-2xl font-bold flex items-center gap-2 mb-6">
+
+                    <i
+                        class="fa-solid fa-rocket text-primary">
+                    </i>
+
+                    PrimeMarke
+
+                </a>
+
+
+                <p
+                    class="text-grayLight text-sm mb-6">
+
+                    Soluções digitais que elevam sua marca.
+                    Transformando ideias em resultados reais.
+
+                </p>
+
+
+                <div class="flex gap-4">
+
+                    <a
+                        href="#"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Serviços -->
+
+            <div>
+
+                <h4
+                    class="font-bold text-lg mb-6">
+
+                    Serviços
+
+                </h4>
+
+
+                <ul
+                    class="space-y-3 text-sm text-grayLight">
+
+                    <li>
+                        <a
+                            href="index.html#servicos"
+                            class="hover:text-primary">
+                            Criação de Sites
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="index.html#servicos"
+                            class="hover:text-primary">
+                            Landing Pages
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="index.html#servicos"
+                            class="hover:text-primary">
+                            Lojas Virtuais
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="index.html#servicos"
+                            class="hover:text-primary">
+                            Página de Links
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Links -->
+
+            <div>
+
+                <h4
+                    class="font-bold text-lg mb-6">
+
+                    Links Rápidos
+
+                </h4>
+
+
+                <ul
+                    class="space-y-3 text-sm text-grayLight">
+
+                    <li>
+
+                        <a
+                            href="index.html#sobre"
+                            class="hover:text-primary">
+                            Sobre Nós
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a
+                            href="index.html#portfolio"
+                            class="hover:text-primary">
+                            Portfólio
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a
+                            href="blog.html"
+                            class="hover:text-primary">
+                            Blog
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a
+                            href="index.html#contato"
+                            class="hover:text-primary">
+                            Contato
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Contato -->
+
+            <div>
+
+                <h4
+                    class="font-bold text-lg mb-6">
+
+                    Contato
+
+                </h4>
+
+
+                <ul
+                    class="space-y-3 text-sm text-grayLight">
+
+                    <li
+                        class="flex items-center gap-3">
+
+                        <i
+                            class="fa-brands fa-whatsapp text-primary">
+                        </i>
+
+                        (00) 00000-0000
+
+                    </li>
+
+
+                    <li
+                        class="flex items-center gap-3">
+
+                        <i
+                            class="fa-solid fa-envelope text-primary">
+                        </i>
+
+                        contato@primemarke.com.br
+
+                    </li>
+
+
+                    <li
+                        class="flex items-center gap-3">
+
+                        <i
+                            class="fa-solid fa-location-dot text-primary">
+                        </i>
+
+                        Brasil
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 border-t border-white/10 text-center text-sm text-grayLight">
+
+            <p>
+                &copy; 2026 PrimeMarke. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Voltar ao topo -->
+
+    <button
+        id="backToTop"
+        class="fixed bottom-6 right-6 w-12 h-12 bg-primary rounded-full text-white shadow-[0_0_15px_rgba(59,130,246,0.6)] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 z-50">
+
+        <i
+            class="fa-solid fa-arrow-up">
+        </i>
+
+    </button>
+
+
+
+    <!-- Scripts -->
+
+    <script
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+
+
+    <script>
+
+        // ==========================================
+        // AOS
+        // ==========================================
+
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+
+
+        // ==========================================
+        // MENU MOBILE
+        // ==========================================
+
+        const mobileMenuBtn =
+            document.getElementById('mobile-menu-btn');
+
+        const mobileMenu =
+            document.getElementById('mobile-menu');
+
+        const mobileMenuIcon =
+            document.getElementById('mobile-menu-icon');
+
+
+        mobileMenuBtn?.addEventListener('click', () => {
+
+            const isOpen =
+                !mobileMenu.classList.contains('hidden');
+
+
+            if (isOpen) {
+
+                mobileMenu.classList.add('hidden');
+
+                mobileMenuIcon.classList.remove('fa-xmark');
+
+                mobileMenuIcon.classList.add('fa-bars');
+
+
+            } else {
+
+                mobileMenu.classList.remove('hidden');
+
+                mobileMenuIcon.classList.remove('fa-bars');
+
+                mobileMenuIcon.classList.add('fa-xmark');
+
+            }
+
+        });
+
+
+
+        // ==========================================
+        // COMPARTILHAMENTO
+        // ==========================================
+
+        const pageUrl =
+            encodeURIComponent(window.location.href);
+
+        const pageTitle =
+            encodeURIComponent(document.title);
+
+
+        document
+            .querySelectorAll('[data-share]')
+            .forEach(button => {
+
+                button.addEventListener('click', () => {
+
+                    const network =
+                        button.dataset.share;
+
+                    let url = '';
+
+
+                    if (network === 'whatsapp') {
+
+                        url =
+                            `https://wa.me/?text=${pageTitle}%20${pageUrl}`;
+
+                    }
+
+
+                    if (network === 'facebook') {
+
+                        url =
+                            `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+
+                    }
+
+
+                    if (network === 'linkedin') {
+
+                        url =
+                            `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+
+                    }
+
+
+                    if (url) {
+
+                        window.open(
+                            url,
+                            '_blank',
+                            'width=700,height=500'
+                        );
+
+                    }
+
+                });
+
+            });
+
+
+
+        // ==========================================
+        // COPIAR LINK
+        // ==========================================
+
+        const copyLink =
+            document.getElementById('copy-link');
+
+
+        copyLink?.addEventListener('click', async () => {
+
+            const text =
+                copyLink.querySelector('span');
+
+
+            try {
+
+                await navigator.clipboard.writeText(
+                    window.location.href
+                );
+
+
+                text.textContent =
+                    'Link copiado!';
+
+
+                setTimeout(() => {
+
+                    text.textContent =
+                        'Copiar link';
+
+                }, 2000);
+
+
+            } catch {
+
+                text.textContent =
+                    'Não foi possível copiar';
+
+            }
+
+        });
+
+
+
+        // ==========================================
+        // SUMÁRIO ATIVO
+        // ==========================================
+
+        const sections =
+            document.querySelectorAll(
+                '.article-content h2[id]'
+            );
+
+        const tocLinks =
+            document.querySelectorAll(
+                '.toc-link'
+            );
+
+
+        window.addEventListener('scroll', () => {
+
+            let current = '';
+
+
+            sections.forEach(section => {
+
+                const sectionTop =
+                    section.offsetTop - 180;
+
+
+                if (
+                    window.scrollY >= sectionTop
+                ) {
+
+                    current =
+                        section.getAttribute('id');
+
+                }
+
+            });
+
+
+            tocLinks.forEach(link => {
+
+                link.classList.remove('active');
+
+
+                if (
+                    link.getAttribute('href') ===
+                    `#${current}`
+                ) {
+
+                    link.classList.add('active');
+
+                }
+
+            });
+
+        });
+
+
+
+        // ==========================================
+        // VOLTAR AO TOPO
+        // ==========================================
+
+        const backToTop =
+            document.getElementById('backToTop');
+
+
+        window.addEventListener('scroll', () => {
+
+            if (
+                window.scrollY > 500
+            ) {
+
+                backToTop.classList.remove(
+                    'opacity-0',
+                    'pointer-events-none'
+                );
+
+            } else {
+
+                backToTop.classList.add(
+                    'opacity-0',
+                    'pointer-events-none'
+                );
+
+            }
+
+        });
+
+
+        backToTop?.addEventListener('click', () => {
+
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+
+        });
+
+    </script>
+
+
+    <!-- Traduções -->
+    <script src="assets/js/translations.js"></script>
+
+</body>
+
+</html>
