@@ -56,7 +56,7 @@
         rel="stylesheet">
 
     <!-- CSS principal -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/css/style.css">
 
     <style>
         html,
@@ -177,7 +177,7 @@
             <!-- Logo -->
 
             <a
-                href="index.html"
+                href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>"
                 class="text-xl sm:text-2xl font-bold flex items-center gap-2 min-w-0 shrink">
 
                 <i class="fa-solid fa-rocket text-primary shrink-0"></i>
@@ -195,37 +195,37 @@
                 class="hidden md:flex gap-6 text-grayLight text-sm font-medium">
 
                 <a
-                    href="index.html#inicio"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#inicio"
                     class="hover:text-primary transition">
                     Início
                 </a>
 
                 <a
-                    href="index.html#sobre"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#sobre"
                     class="hover:text-primary transition">
                     Sobre
                 </a>
 
                 <a
-                    href="index.html#servicos"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                     class="hover:text-primary transition">
                     Serviços
                 </a>
 
                 <a
-                    href="index.html#portfolio"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#portfolio"
                     class="hover:text-primary transition">
                     Portfólio
                 </a>
 
                 <a
-                    href="blog.html"
+                    href="<?= htmlspecialchars(base_url('blog'), ENT_QUOTES, 'UTF-8') ?>"
                     class="text-primary">
                     Blog
                 </a>
 
                 <a
-                    href="index.html#contato"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                     class="hover:text-primary transition">
                     Contato
                 </a>
@@ -272,7 +272,7 @@
                 <!-- WhatsApp -->
 
                 <a
-                    href="index.html#contato"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                     class="inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full font-semibold glow-btn text-sm">
 
                     <i class="fa-brands fa-whatsapp text-lg"></i>
@@ -348,37 +348,37 @@
                 class="max-w-7xl mx-auto px-4 py-5 flex flex-col gap-2">
 
                 <a
-                    href="index.html#inicio"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#inicio"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
                     Início
                 </a>
 
                 <a
-                    href="index.html#sobre"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#sobre"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
                     Sobre
                 </a>
 
                 <a
-                    href="index.html#servicos"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
                     Serviços
                 </a>
 
                 <a
-                    href="index.html#portfolio"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#portfolio"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
                     Portfólio
                 </a>
 
                 <a
-                    href="blog.html"
+                    href="<?= htmlspecialchars(base_url('blog'), ENT_QUOTES, 'UTF-8') ?>"
                     class="mobile-menu-link px-4 py-3 rounded-lg bg-primary/10 text-primary">
                     Blog
                 </a>
 
                 <a
-                    href="index.html#contato"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:bg-white/5">
                     Contato
                 </a>
@@ -418,7 +418,7 @@
                     data-aos="fade-up">
 
                     <a
-                        href="index.html"
+                        href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>"
                         class="hover:text-primary transition">
 
                         Início
@@ -428,7 +428,7 @@
                     <i class="fa-solid fa-chevron-right text-xs"></i>
 
                     <a
-                        href="blog.html"
+                        href="<?= htmlspecialchars(base_url('blog'), ENT_QUOTES, 'UTF-8') ?>"
                         class="hover:text-primary transition">
 
                         Blog
@@ -1140,7 +1140,7 @@
 
 
                                     <a
-                                        href="index.html#contato"
+                                        href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                                         class="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:text-lightBlue">
 
                                         Solicitar orçamento
@@ -1222,7 +1222,7 @@
 
 
                         <a
-                            href="index.html#contato"
+                            href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                             class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold glow-btn">
 
                             <i
@@ -1277,7 +1277,7 @@
 
 
                     <a
-                        href="blog.html"
+                        href="<?= htmlspecialchars(base_url('blog'), ENT_QUOTES, 'UTF-8') ?>"
                         class="text-grayLight hover:text-primary transition inline-flex items-center gap-2">
 
                         Ver todos
@@ -1342,7 +1342,7 @@
 
 
                             <a
-                                href="artigo.html"
+                                href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                                 class="text-sm font-semibold inline-flex items-center gap-2 hover:text-primary">
 
                                 Ler artigo
@@ -1405,7 +1405,7 @@
 
 
                             <a
-                                href="artigo.html"
+                                href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                                 class="text-sm font-semibold inline-flex items-center gap-2 hover:text-primary">
 
                                 Ler artigo
@@ -1468,7 +1468,7 @@
 
 
                             <a
-                                href="artigo.html"
+                                href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                                 class="text-sm font-semibold inline-flex items-center gap-2 hover:text-primary">
 
                                 Ler artigo
@@ -1509,7 +1509,7 @@
             <div>
 
                 <a
-                    href="index.html"
+                    href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>"
                     class="text-2xl font-bold flex items-center gap-2 mb-6">
 
                     <i
@@ -1579,7 +1579,7 @@
 
                     <li>
                         <a
-                            href="index.html#servicos"
+                            href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                             class="hover:text-primary">
                             Criação de Sites
                         </a>
@@ -1587,7 +1587,7 @@
 
                     <li>
                         <a
-                            href="index.html#servicos"
+                            href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                             class="hover:text-primary">
                             Landing Pages
                         </a>
@@ -1595,7 +1595,7 @@
 
                     <li>
                         <a
-                            href="index.html#servicos"
+                            href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                             class="hover:text-primary">
                             Lojas Virtuais
                         </a>
@@ -1603,7 +1603,7 @@
 
                     <li>
                         <a
-                            href="index.html#servicos"
+                            href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                             class="hover:text-primary">
                             Página de Links
                         </a>
@@ -1633,7 +1633,7 @@
                     <li>
 
                         <a
-                            href="index.html#sobre"
+                            href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#sobre"
                             class="hover:text-primary">
                             Sobre Nós
                         </a>
@@ -1644,7 +1644,7 @@
                     <li>
 
                         <a
-                            href="index.html#portfolio"
+                            href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#portfolio"
                             class="hover:text-primary">
                             Portfólio
                         </a>
@@ -1655,7 +1655,7 @@
                     <li>
 
                         <a
-                            href="blog.html"
+                            href="<?= htmlspecialchars(base_url('blog'), ENT_QUOTES, 'UTF-8') ?>"
                             class="hover:text-primary">
                             Blog
                         </a>
@@ -1666,7 +1666,7 @@
                     <li>
 
                         <a
-                            href="index.html#contato"
+                            href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                             class="hover:text-primary">
                             Contato
                         </a>
@@ -2036,7 +2036,7 @@
 
 
     <!-- Traduções -->
-    <script src="assets/js/translations.js"></script>
+    <script src="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/js/translations.js"></script>
 
 </body>
 

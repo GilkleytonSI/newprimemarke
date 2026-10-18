@@ -1,0 +1,1 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Página não encontrada | PrimeMarke</title><body style="font-family:Arial;background:#0b1220;color:white;text-align:center;padding:12vh 1rem"><h1>404 — Página não encontrada</h1><a style="color:#38bdf8" href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>">Voltar ao início</a></body></html>

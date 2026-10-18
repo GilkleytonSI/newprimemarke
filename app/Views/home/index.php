@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <!-- CSS Externo -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/css/style.css">
 </head>
 
 <body class="antialiased selection:bg-primary selection:text-white">
@@ -286,7 +286,7 @@
             </div>
             <div class="relative" data-aos="fade-left">
                 <div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
-                <img src="assets/img/computadorPrime.png" alt="Equipe PrimeMarke"
+                <img src="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/img/computadorPrime.png" alt="Equipe PrimeMarke"
                     class="rounded-2xl relative z-10 border border-white/10">
             </div>
         </div>
@@ -422,7 +422,7 @@
                     target="blank">
 
                     <div class="relative h-60 overflow-hidden">
-                        <img src="assets/img/Site-brayner.png" alt="Projeto Site"
+                        <img src="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/img/Site-brayner.png" alt="Projeto Site"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div
                             class="absolute inset-0 bg-bgMain/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -739,7 +739,7 @@
                     </div>
 
 
-                    <a href="artigo.html"
+                    <a href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                         class="inline-flex items-center gap-2 text-primary font-semibold hover:text-lightBlue transition group">
 
                         Ler artigo
@@ -810,7 +810,7 @@
                         </div>
 
 
-                        <a href="artigo.html"
+                        <a href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -876,7 +876,7 @@
                         </div>
 
 
-                        <a href="artigo.html"
+                        <a href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -942,7 +942,7 @@
                         </div>
 
 
-                        <a href="artigo.html"
+                        <a href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -1007,7 +1007,7 @@
                         </div>
 
 
-                        <a href="artigo.html"
+                        <a href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -1072,7 +1072,7 @@
                         </div>
 
 
-                        <a href="artigo.html"
+                        <a href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -1137,7 +1137,7 @@
                         </div>
 
 
-                        <a href="artigo.html"
+                        <a href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -1156,7 +1156,7 @@
             <!-- Botão -->
             <div class="text-center mt-14" data-aos="fade-up">
 
-                <a href="blog.html"
+                <a href="<?= htmlspecialchars(base_url('blog'), ENT_QUOTES, 'UTF-8') ?>"
                     class="inline-flex items-center gap-3 bg-primary text-white px-8 py-3.5 rounded-full font-semibold glow-btn transition-all hover:scale-105">
 
                     Ver todos os artigos
@@ -1529,8 +1529,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
 
     <!-- Seu JS Externo -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/translations.js"></script>
+    <script src="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/js/script.js"></script>
+    <script src="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/js/translations.js"></script>
 </body>
 
 </html>
