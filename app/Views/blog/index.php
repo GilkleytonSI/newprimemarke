@@ -45,7 +45,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- CSS Projeto -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/css/style.css">
 
     <style>
         body {
@@ -103,7 +103,7 @@
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3">
 
             <!-- Logo -->
-            <a href="index.html"
+            <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>"
                 class="text-xl sm:text-2xl font-bold flex items-center gap-2 min-w-0 shrink">
 
                 <i class="fa-solid fa-rocket text-primary shrink-0"></i>
@@ -118,32 +118,32 @@
             <!-- Menu Desktop -->
             <nav class="hidden md:flex gap-6 text-grayLight text-sm font-medium">
 
-                <a href="index.html#inicio"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#inicio"
                     class="hover:text-primary transition">
                     Início
                 </a>
 
-                <a href="index.html#sobre"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#sobre"
                     class="hover:text-primary transition">
                     Sobre
                 </a>
 
-                <a href="index.html#servicos"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                     class="hover:text-primary transition">
                     Serviços
                 </a>
 
-                <a href="index.html#portfolio"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#portfolio"
                     class="hover:text-primary transition">
                     Portfólio
                 </a>
 
-                <a href="blog.html"
+                <a href="<?= htmlspecialchars(base_url('blog'), ENT_QUOTES, 'UTF-8') ?>"
                     class="text-primary">
                     Blog
                 </a>
 
-                <a href="index.html#contato"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                     class="hover:text-primary transition">
                     Contato
                 </a>
@@ -184,7 +184,7 @@
                 </div>
 
                 <!-- WhatsApp -->
-                <a href="index.html#contato"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                     class="inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full font-semibold glow-btn text-sm">
 
                     <i class="fa-brands fa-whatsapp text-lg"></i>
@@ -253,37 +253,37 @@
 
             <nav class="max-w-7xl mx-auto px-4 py-5 flex flex-col gap-2">
 
-                <a href="index.html#inicio"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#inicio"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:text-white hover:bg-white/5 transition">
                     Início
                 </a>
 
-                <a href="index.html#sobre"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#sobre"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:text-white hover:bg-white/5 transition">
                     Sobre
                 </a>
 
-                <a href="index.html#servicos"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:text-white hover:bg-white/5 transition">
                     Serviços
                 </a>
 
-                <a href="index.html#portfolio"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#portfolio"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:text-white hover:bg-white/5 transition">
                     Portfólio
                 </a>
 
-                <a href="blog.html"
+                <a href="<?= htmlspecialchars(base_url('blog'), ENT_QUOTES, 'UTF-8') ?>"
                     class="mobile-menu-link px-4 py-3 rounded-lg bg-primary/10 text-primary">
                     Blog
                 </a>
 
-                <a href="index.html#contato"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                     class="mobile-menu-link px-4 py-3 rounded-lg text-grayLight hover:text-white hover:bg-white/5 transition">
                     Contato
                 </a>
 
-                <a href="index.html#contato"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                     class="mobile-menu-link mt-2 inline-flex items-center justify-center gap-2 bg-primary text-white px-5 py-3 rounded-full font-semibold glow-btn">
 
                     <i class="fa-brands fa-whatsapp"></i>
@@ -529,7 +529,7 @@
                     <div>
 
                         <a
-                            href="artigo.html"
+                            href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full font-semibold glow-btn">
 
                             Ler artigo
@@ -656,7 +656,7 @@
 
 
                         <a
-                            href="artigo.html"
+                            href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -732,7 +732,7 @@
 
 
                         <a
-                            href="artigo.html"
+                            href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -808,7 +808,7 @@
 
 
                         <a
-                            href="artigo.html"
+                            href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -883,7 +883,7 @@
 
 
                         <a
-                            href="artigo.html"
+                            href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -959,7 +959,7 @@
 
 
                         <a
-                            href="artigo.html"
+                            href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -1035,7 +1035,7 @@
 
 
                         <a
-                            href="artigo.html"
+                            href="<?= htmlspecialchars(base_url('artigo'), ENT_QUOTES, 'UTF-8') ?>"
                             class="inline-flex items-center gap-2 text-sm font-semibold hover:text-primary transition">
 
                             Ler artigo
@@ -1127,7 +1127,7 @@
 
 
                     <a
-                        href="index.html#contato"
+                        href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                         class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold glow-btn">
 
                         <i class="fa-brands fa-whatsapp"></i>
@@ -1155,7 +1155,7 @@
             <!-- Marca -->
             <div>
 
-                <a href="index.html"
+                <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>"
                     class="text-2xl font-bold flex items-center gap-2 mb-6">
 
                     <i class="fa-solid fa-rocket text-primary"></i>
@@ -1211,28 +1211,28 @@
                 <ul class="space-y-3 text-sm text-grayLight">
 
                     <li>
-                        <a href="index.html#servicos"
+                        <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                             class="hover:text-primary transition">
                             Criação de Sites
                         </a>
                     </li>
 
                     <li>
-                        <a href="index.html#servicos"
+                        <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                             class="hover:text-primary transition">
                             Landing Pages
                         </a>
                     </li>
 
                     <li>
-                        <a href="index.html#servicos"
+                        <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                             class="hover:text-primary transition">
                             Lojas Virtuais
                         </a>
                     </li>
 
                     <li>
-                        <a href="index.html#servicos"
+                        <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#servicos"
                             class="hover:text-primary transition">
                             Página de Links
                         </a>
@@ -1253,28 +1253,28 @@
                 <ul class="space-y-3 text-sm text-grayLight">
 
                     <li>
-                        <a href="index.html#sobre"
+                        <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#sobre"
                             class="hover:text-primary transition">
                             Sobre Nós
                         </a>
                     </li>
 
                     <li>
-                        <a href="index.html#portfolio"
+                        <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#portfolio"
                             class="hover:text-primary transition">
                             Portfólio
                         </a>
                     </li>
 
                     <li>
-                        <a href="blog.html"
+                        <a href="<?= htmlspecialchars(base_url('blog'), ENT_QUOTES, 'UTF-8') ?>"
                             class="hover:text-primary transition">
                             Blog
                         </a>
                     </li>
 
                     <li>
-                        <a href="index.html#contato"
+                        <a href="<?= htmlspecialchars(base_url(), ENT_QUOTES, 'UTF-8') ?>#contato"
                             class="hover:text-primary transition">
                             Contato
                         </a>
@@ -1556,7 +1556,7 @@
     </script>
 
     <!-- Caso queira manter seu sistema de tradução -->
-    <script src="assets/js/translations.js"></script>
+    <script src="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/js/translations.js"></script>
 
 </body>
 
