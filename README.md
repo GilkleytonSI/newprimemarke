@@ -1,23 +1,27 @@
-# PrimeMarke — MVC (Bloco 01)
+# PrimeMarke — Bloco 02: Componentização do layout
 
-Migração da versão HTML original para PHP 8.0 MVC, preservando o HTML, CSS, JS, imagens e traduções.
+Projeto MVC para PHP 8.0 / XAMPP. Não requer banco de dados.
 
-## Instalação XAMPP
-1. Extraia a pasta `PrimeMarke-MVC` em `C:\xampp\htdocs\`.
-2. Inicie o Apache no XAMPP e habilite `mod_rewrite` (padrão na maioria das instalações).
-3. Abra `http://localhost/PrimeMarke-MVC/`.
-4. Blog: `/PrimeMarke-MVC/blog`; artigo: `/PrimeMarke-MVC/artigo`.
+## Como instalar
+1. Extraia `PrimeMarke-MVC-Bloco-02` em `C:\xampp\htdocs\`.
+2. Inicie o Apache.
+3. Acesse `http://localhost/PrimeMarke-MVC-Bloco-02/`.
+4. Rotas: `/`, `/blog`, `/artigo`.
 
-## Arquitetura
-- `index.php`: front controller, autoload e definição de rotas.
-- `app/Core`: roteamento e renderização de views.
-- `app/Controllers`: controllers da home e do blog.
-- `app/Views`: HTML original convertido em views PHP.
-- `public/assets`: CSS, JS e imagens originais.
-- `config`: configurações futuras.
+## Componentes
+Os arquivos `app/Views/components/{home,blog,article}/{head,header,footer}.php`
+foram extraídos diretamente das três páginas originais, sem reescrever classes CSS,
+atributos JS, menus, idioma ou conteúdo. As views em `home/` e `blog/` agora
+compõem essas partes com `require`.
 
-## Escopo desta etapa
-Esta é uma migração estrutural, sem banco de dados, autenticação ou painel administrativo. O conteúdo do blog continua estático como no ZIP original. Header/footer ainda estão dentro das páginas para evitar alterações visuais acidentais; a extração em layouts reutilizáveis é o próximo bloco. Não há envio de e-mail backend implementado nesta etapa.
+**Por que existem variantes?** As três páginas tinham cabeçalhos e rodapés
+com HTML e comportamento diferentes. Para preservar o visual, a etapa 02
+separa primeiro cada variante; uma unificação de design exige validação visual
+e funcional antes de remover as variantes.
 
-## Segurança em produção
-Prefira configurar DocumentRoot para a pasta `public`. Com hospedagem que expõe a raiz, o `.htaccess` bloqueia pastas internas.
+## Próximas melhorias
+- Consolidar um header/footer único após homologação do design entre páginas.
+- Migrar scripts inline e configurar menus por rota, sem quebrar as âncoras.
+- Blog dinâmico e painel administrativo em etapas futuras.
+
+Nenhum arquivo original de assets foi removido.
