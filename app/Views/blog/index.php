@@ -1080,6 +1080,7 @@
     <!-- Caso queira manter seu sistema de tradução -->
     <script src="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/js/translations.js"></script>
 
+    <script defer src="<?= htmlspecialchars(base_url('public/assets/js/site-common.js'), ENT_QUOTES, 'UTF-8') ?>"></script>
 </body>
 
 </html>

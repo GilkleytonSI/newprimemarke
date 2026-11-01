@@ -155,4 +155,5 @@
         }
     </style>
 
+    <link rel="stylesheet" href="<?= htmlspecialchars(base_url('public/assets/css/site-common.css'), ENT_QUOTES, 'UTF-8') ?>">
 </head>

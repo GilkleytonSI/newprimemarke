@@ -1,27 +1,21 @@
-# PrimeMarke — Bloco 02: Componentização do layout
+# PrimeMarke — Bloco 03 (PHP 8.0 / XAMPP)
 
-Projeto MVC para PHP 8.0 / XAMPP. Não requer banco de dados.
+Evolução incremental do Bloco 02, preservando HTML, estilos, animações, traduções e scripts originais.
 
-## Como instalar
-1. Extraia `PrimeMarke-MVC-Bloco-02` em `C:\xampp\htdocs\`.
-2. Inicie o Apache.
-3. Acesse `http://localhost/PrimeMarke-MVC-Bloco-02/`.
-4. Rotas: `/`, `/blog`, `/artigo`.
+## Alterações
+- Links entre Início, Blog e Artigo padronizados para as rotas MVC onde usavam arquivos `.html` ou `.php` antigos.
+- Links das seções do menu e rodapé nas páginas internas apontam para as âncoras da página inicial.
+- `public/assets/js/site-common.js`: comportamento compartilhado progressivo (Escape e segurança de links externos).
+- `public/assets/css/site-common.css`: foco acessível, mídia responsiva e preferência por movimento reduzido.
+- Mantidos os scripts originais para evitar regressões no visual e nas interações.
 
-## Componentes
-Os arquivos `app/Views/components/{home,blog,article}/{head,header,footer}.php`
-foram extraídos diretamente das três páginas originais, sem reescrever classes CSS,
-atributos JS, menus, idioma ou conteúdo. As views em `home/` e `blog/` agora
-compõem essas partes com `require`.
+## Instalação
+1. Extrair a pasta `PrimeMarke-MVC-Bloco-03` em `C:\xampp\htdocs\`.
+2. Iniciar Apache no XAMPP.
+3. Abrir `http://localhost/PrimeMarke-MVC-Bloco-03/`, `/blog` e `/artigo`.
+4. Verificar menu desktop/mobile, idiomas, animações, links e formulário no navegador.
 
-**Por que existem variantes?** As três páginas tinham cabeçalhos e rodapés
-com HTML e comportamento diferentes. Para preservar o visual, a etapa 02
-separa primeiro cada variante; uma unificação de design exige validação visual
-e funcional antes de remover as variantes.
-
-## Próximas melhorias
-- Consolidar um header/footer único após homologação do design entre páginas.
-- Migrar scripts inline e configurar menus por rota, sem quebrar as âncoras.
-- Blog dinâmico e painel administrativo em etapas futuras.
-
-Nenhum arquivo original de assets foi removido.
+## Observações
+- Não foi criado banco de dados, blog dinâmico ou painel administrativo neste bloco.
+- O layout original permanece em componentes específicos por página; unificações adicionais requerem validação visual.
+- Dependências de CDN exigem internet. Testes visuais e funcionais em navegador ainda são necessários.
