@@ -1,22 +1,7 @@
 /* Shared non-destructive responsive/accessibility adjustments */
-:focus-visible {
-  outline: 2px solid #38bdf8;
-  outline-offset: 3px;
-}
-
-img, video, iframe {
-  max-width: 100%;
-}
-
+:focus-visible { outline: 2px solid #38bdf8; outline-offset: 3px; }
+img, video, iframe { max-width: 100%; }
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *, *::before, *::after {
-    scroll-behavior: auto !important;
-    animation-duration: .01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: .01ms !important;
-  }
+  html:focus-within { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }

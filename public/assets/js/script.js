@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const type = projectCard.getAttribute('data-type');
                 const img = projectCard.getAttribute('data-img');
                 const desc = projectCard.getAttribute('data-desc');
-                const techs = projectCard.getAttribute('data-tech').split(','); 
+                const techs = (projectCard.getAttribute('data-tech') || '').split(',').filter(Boolean); 
                 const link = projectCard.getAttribute('data-link'); 
 
                 document.getElementById('modal-title').innerText = title;
