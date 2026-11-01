@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 // Ponto de entrada da aplicação: compatível com XAMPP/PHP 8.0.
+if (session_status() === PHP_SESSION_NONE) { session_start(); }
 spl_autoload_register(static function (string $class): void {
     $prefix = 'App\\';
     if (strncmp($class, $prefix, strlen($prefix)) !== 0) return;
@@ -25,4 +26,6 @@ $blog = new App\Controllers\BlogController();
 $router->get('/', [$home, 'index']);
 $router->get('/blog', [$blog, 'index']);
 $router->get('/artigo', [$blog, 'show']);
+$contact = new App\Controllers\ContactController();
+$router->post('/contato/enviar', [$contact, 'send']);
 $router->dispatch($_SERVER['REQUEST_METHOD'] ?? 'GET', $path);

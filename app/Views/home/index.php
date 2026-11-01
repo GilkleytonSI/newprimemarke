@@ -211,181 +211,15 @@
                 </button>
             </div>
 
-            <!-- Grid de Projetos -->
+            <!-- Projetos carregados pelo Model (Bloco 05) -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
-
-                <!-- Projeto 1 -->
-                <div class="portfolio-item glass-card rounded-2xl overflow-hidden hover-glow transition-all duration-300 group"
-                    data-category="sites" data-aos="fade-up" data-aos-delay="100" data-title="Brayner Academia"
-                    data-type="Site Institucional" data-img="assets/img/Site-brayner.png" data-desc="Desenvolvimento de um site institucional moderno e responsivo para a Brayner Academia, destacando 
-                                sua estrutura, serviços e diferenciais."
-                    data-tech="HTML5, CSS, TailwindCSS, JavaScript" data-link="https://brayneracademia.com.br/"
-                    target="blank">
-
-                    <div class="relative h-60 overflow-hidden">
-                        <img src="<?= htmlspecialchars(base_url('public/assets'), ENT_QUOTES, 'UTF-8') ?>/img/Site-brayner.png" alt="Projeto Site"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div
-                            class="absolute inset-0 bg-bgMain/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <button
-                                class="open-modal-btn w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white glow-btn hover:scale-110 transition-transform">
-                                <i class="fa-solid fa-arrow-right pointer-events-none"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-primary text-xs font-bold uppercase tracking-wider block mb-2">Site
-                            Institucional</span>
-                        <h3 class="text-xl font-bold mb-2">Brayner Academia</h3>
-                        <p class="text-grayLight text-sm mb-4 line-clamp-2">Desenvolvimento de um site institucional
-                            moderno e
-                            responsivo para a Brayner Academia.</p>
-
-                        <button
-                            class="open-modal-btn text-sm font-medium hover:text-primary transition flex items-center gap-2">
-                            Ver projeto <i class="fa-solid fa-chevron-right text-xs pointer-events-none"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Projeto 2 -->
-                <div class="portfolio-item glass-card rounded-2xl overflow-hidden hover-glow transition-all duration-300 group"
-                    data-category="landing-pages" data-aos="fade-up" data-aos-delay="200">
-                    <div class="relative h-60 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                            alt="Projeto Landing Page"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div
-                            class="absolute inset-0 bg-bgMain/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="#"
-                                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white glow-btn hover:scale-110 transition-transform"><i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-primary text-xs font-bold uppercase tracking-wider block mb-2">Landing
-                            Page</span>
-                        <h3 class="text-xl font-bold mb-2">Clínica Vita</h3>
-                        <p class="text-grayLight text-sm mb-4 line-clamp-2">Página de alta conversão para agendamento de
-                            consultas médicas e exames.</p>
-                        <a href="#"
-                            class="text-sm font-medium hover:text-primary transition flex items-center gap-2">Ver
-                            projeto <i class="fa-solid fa-chevron-right text-xs"></i></a>
-                    </div>
-                </div>
-
-                <!-- Projeto 3 -->
-                <div class="portfolio-item glass-card rounded-2xl overflow-hidden hover-glow transition-all duration-300 group"
-                    data-category="lojas" data-aos="fade-up" data-aos-delay="300">
-                    <div class="relative h-60 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
-                            alt="Projeto Loja Virtual"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div
-                            class="absolute inset-0 bg-bgMain/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="#"
-                                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white glow-btn hover:scale-110 transition-transform"><i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-primary text-xs font-bold uppercase tracking-wider block mb-2">Loja
-                            Virtual</span>
-                        <h3 class="text-xl font-bold mb-2">Store Prime</h3>
-                        <p class="text-grayLight text-sm mb-4 line-clamp-2">E-commerce responsivo com painel
-                            administrativo e checkout transparente.</p>
-                        <a href="#"
-                            class="text-sm font-medium hover:text-primary transition flex items-center gap-2">Ver
-                            projeto <i class="fa-solid fa-chevron-right text-xs"></i></a>
-                    </div>
-                </div>
-
-                <!-- Projeto 4 -->
-                <div class="portfolio-item glass-card rounded-2xl overflow-hidden hover-glow transition-all duration-300 group"
-                    data-category="sites" data-aos="fade-up" data-aos-delay="400">
-                    <div class="relative h-60 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80"
-                            alt="Projeto Site"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div
-                            class="absolute inset-0 bg-bgMain/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="#"
-                                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white glow-btn hover:scale-110 transition-transform"><i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-primary text-xs font-bold uppercase tracking-wider block mb-2">Site
-                            Institucional</span>
-                        <h3 class="text-xl font-bold mb-2">Studio Architecture</h3>
-                        <p class="text-grayLight text-sm mb-4 line-clamp-2">Site focado no impacto visual e design
-                            minimalista para escritório de arquitetura.</p>
-                        <a href="#"
-                            class="text-sm font-medium hover:text-primary transition flex items-center gap-2">Ver
-                            projeto <i class="fa-solid fa-chevron-right text-xs"></i></a>
-                    </div>
-                </div>
-
-                <!-- Projeto 5 -->
-                <div class="portfolio-item glass-card rounded-2xl overflow-hidden hover-glow transition-all duration-300 group"
-                    data-category="catalogos" data-aos="fade-up" data-aos-delay="500">
-                    <div class="relative h-60 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=800&q=80"
-                            alt="Projeto Catálogo"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div
-                            class="absolute inset-0 bg-bgMain/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="#"
-                                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white glow-btn hover:scale-110 transition-transform"><i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-primary text-xs font-bold uppercase tracking-wider block mb-2">Catálogo
-                            Digital</span>
-                        <h3 class="text-xl font-bold mb-2">Menu Restaurante</h3>
-                        <p class="text-grayLight text-sm mb-4 line-clamp-2">Catálogo digital interativo com
-                            redirecionamento de pedidos direto para o WhatsApp.</p>
-                        <a href="#"
-                            class="text-sm font-medium hover:text-primary transition flex items-center gap-2">Ver
-                            projeto <i class="fa-solid fa-chevron-right text-xs"></i></a>
-                    </div>
-                </div>
-
-                <!-- Projeto 6 -->
-                <div class="portfolio-item glass-card rounded-2xl overflow-hidden hover-glow transition-all duration-300 group"
-                    data-category="landing-pages" data-aos="fade-up" data-aos-delay="600">
-                    <div class="relative h-60 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-                            alt="Projeto Landing Page"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div
-                            class="absolute inset-0 bg-bgMain/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="#"
-                                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white glow-btn hover:scale-110 transition-transform"><i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-primary text-xs font-bold uppercase tracking-wider block mb-2">Landing
-                            Page</span>
-                        <h3 class="text-xl font-bold mb-2">Imersão Marketing</h3>
-                        <p class="text-grayLight text-sm mb-4 line-clamp-2">Página de captura (Lead Generation) com
-                            integração de email marketing e CRM.</p>
-                        <a href="#"
-                            class="text-sm font-medium hover:text-primary transition flex items-center gap-2">Ver
-                            projeto <i class="fa-solid fa-chevron-right text-xs"></i></a>
-                    </div>
-                </div>
-
-                <!-- Projeto 6 -->
-                <div class="portfolio-item glass-card rounded-2xl overflow-hidden hover-glow transition-all duration-300 group"
-                    data-category="pagina-links" data-aos="fade-up" data-aos-delay="100">
-
-                    <!-- conteúdo do projeto -->
-                </div>
-
+                <?php foreach (($projects ?? []) as $project): ?>
+                    <?php require dirname(__DIR__) . '/components/portfolio/card.php'; ?>
+                <?php endforeach; ?>
             </div>
+            <?php if (empty($projects)): ?>
+                <p class="text-center text-grayLight">Em breve, novos projetos serão apresentados aqui.</p>
+            <?php endif; ?>
 
             <div class="text-center mt-12">
                 <a href="#contato"
@@ -1206,6 +1040,29 @@
                 class="inline-block bg-white text-darkBlue px-10 py-4 rounded-full font-bold text-lg shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105 transition-transform duration-300">
                 <i class="fa-brands fa-whatsapp mr-2"></i> Solicitar Orçamento Agora
             </a>
+            <?php
+            $contactFlash = $_SESSION['contact_flash'] ?? null;
+            unset($_SESSION['contact_flash']);
+            ?>
+            <?php if ($contactFlash): ?>
+                <div role="status" class="max-w-xl mx-auto mt-6 p-4 rounded-xl bg-bgSec/90 border border-white/20 text-white">
+                    <?= htmlspecialchars($contactFlash['message'], ENT_QUOTES, 'UTF-8') ?>
+                </div>
+            <?php endif; ?>
+            <form action="<?= htmlspecialchars(base_url('contato/enviar'), ENT_QUOTES, 'UTF-8') ?>" method="post"
+                class="max-w-2xl mx-auto mt-10 p-6 md:p-8 bg-bgSec/90 border border-white/20 rounded-2xl text-left shadow-xl">
+                <h3 class="text-2xl font-bold mb-5">Ou solicite seu orçamento pelo formulário</h3>
+                <input type="hidden" name="_csrf" value="<?= htmlspecialchars(\App\Core\Csrf::token(), ENT_QUOTES, 'UTF-8') ?>">
+                <div class="hidden" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <label class="block text-sm">Nome *<input required minlength="2" maxlength="120" name="name" autocomplete="name" class="mt-2 w-full p-3 rounded-lg bg-bgMain border border-white/20 text-white"></label>
+                    <label class="block text-sm">E-mail *<input required type="email" maxlength="254" name="email" autocomplete="email" class="mt-2 w-full p-3 rounded-lg bg-bgMain border border-white/20 text-white"></label>
+                    <label class="block text-sm">WhatsApp<input type="tel" maxlength="35" name="phone" autocomplete="tel" class="mt-2 w-full p-3 rounded-lg bg-bgMain border border-white/20 text-white"></label>
+                    <label class="block text-sm">Serviço<select name="service" class="mt-2 w-full p-3 rounded-lg bg-bgMain border border-white/20 text-white"><option value="">Selecione</option><option>Landing Page</option><option>Site Institucional</option><option>Loja Virtual</option><option>Outros</option></select></label>
+                </div>
+                <label class="block text-sm mt-4">Descreva seu projeto *<textarea required minlength="10" maxlength="3000" rows="4" name="message" class="mt-2 w-full p-3 rounded-lg bg-bgMain border border-white/20 text-white"></textarea></label>
+                <button type="submit" class="mt-5 w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-lightBlue transition">Enviar solicitação</button>
+            </form>
         </div>
     </section>
 
