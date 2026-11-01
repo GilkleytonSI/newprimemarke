@@ -47,10 +47,10 @@ final class Project {
         $image = trim((string)($input['image'] ?? ''));
         $link = trim((string)($input['link'] ?? ''));
         foreach ([$image, $link] as $url) {
-            if ($url !== '' && !filter_var($url, FILTER_VALIDATE_URL) && !preg_match('~^public/assets/img/[a-zA-Z0-9_.-]+$~', $url)) {
+            if ($url !== '' && !preg_match('~^https?://~i', $url) && !preg_match('~^public/assets/img/(?:portfolio/)?[a-zA-Z0-9_.-]+$~', $url)) {
                 throw new \InvalidArgumentException('URL inválida.');
             }
-            if (preg_match('~^https?://~i', $url) && !in_array(strtolower((string)parse_url($url, PHP_URL_SCHEME)), ['http','https'], true)) throw new \InvalidArgumentException('Protocolo inválido.');
+            if (preg_match('~^https?://~i', $url) && !filter_var($url, FILTER_VALIDATE_URL)) throw new \InvalidArgumentException('Protocolo inválido.');
         }
         $tech = $input['technologies'] ?? [];
         if (is_string($tech)) $tech = explode(',', $tech);

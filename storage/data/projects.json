@@ -1,79 +1,79 @@
 [
-  {
-    "id": "brayner-academia",
-    "title": "Brayner Academia",
-    "description": "Desenvolvimento de um site institucional moderno e responsivo para a Brayner Academia, destacando sua estrutura, serviços e diferenciais.",
-    "category": "sites",
-    "type": "Site Institucional",
-    "image": "public/assets/img/Site-brayner.png",
-    "technologies": [
-      "HTML5",
-      "CSS",
-      "TailwindCSS",
-      "JavaScript"
-    ],
-    "link": "https://brayneracademia.com.br/",
-    "published": true,
-    "order": 1
-  },
-  {
-    "id": "clinica-vita",
-    "title": "Clínica Vita",
-    "description": "Página de alta conversão para agendamento de consultas médicas e exames.",
-    "category": "landing-pages",
-    "type": "Landing Page",
-    "image": "",
-    "technologies": [],
-    "link": "",
-    "published": false,
-    "order": 2
-  },
-  {
-    "id": "store-prime",
-    "title": "Store Prime",
-    "description": "E-commerce responsivo com painel administrativo e checkout.",
-    "category": "lojas",
-    "type": "Loja Virtual",
-    "image": "",
-    "technologies": [],
-    "link": "",
-    "published": false,
-    "order": 3
-  },
-  {
-    "id": "studio-architecture",
-    "title": "Studio Architecture",
-    "description": "Site para escritório de arquitetura.",
-    "category": "sites",
-    "type": "Site Institucional",
-    "image": "",
-    "technologies": [],
-    "link": "",
-    "published": false,
-    "order": 4
-  },
-  {
-    "id": "menu-restaurante",
-    "title": "Menu Restaurante",
-    "description": "Catálogo digital interativo com pedidos pelo WhatsApp.",
-    "category": "catalogos",
-    "type": "Catálogo Digital",
-    "image": "",
-    "technologies": [],
-    "link": "",
-    "published": false,
-    "order": 5
-  },
-  {
-    "id": "imersao-marketing",
-    "title": "Imersão Marketing",
-    "description": "Página de captura com integração de marketing.",
-    "category": "landing-pages",
-    "type": "Landing Page",
-    "image": "",
-    "technologies": [],
-    "link": "",
-    "published": false,
-    "order": 6
-  }
+    {
+        "id": "brayner-academia",
+        "title": "Brayner Academia",
+        "description": "Desenvolvimento de um site institucional moderno e responsivo para a Brayner Academia, destacando sua estrutura, serviços e diferenciais.",
+        "category": "sites",
+        "type": "Site Institucional",
+        "image": "public/assets/img/Site-brayner.png",
+        "technologies": [
+            "HTML5",
+            "CSS",
+            "TailwindCSS",
+            "JavaScript"
+        ],
+        "link": "https://brayneracademia.com.br/",
+        "published": true,
+        "order": 1
+    },
+    {
+        "id": "clinica-vita",
+        "title": "Clínica Vita",
+        "description": "Página de alta conversão para agendamento de consultas médicas e exames.",
+        "category": "landing-pages",
+        "type": "Landing Page",
+        "image": "",
+        "technologies": [],
+        "link": "",
+        "published": true,
+        "order": 2
+    },
+    {
+        "id": "store-prime",
+        "title": "Store Prime",
+        "description": "E-commerce responsivo com painel administrativo e checkout.",
+        "category": "lojas",
+        "type": "Loja Virtual",
+        "image": "",
+        "technologies": [],
+        "link": "",
+        "published": false,
+        "order": 3
+    },
+    {
+        "id": "studio-architecture",
+        "title": "Studio Architecture",
+        "description": "Site para escritório de arquitetura.",
+        "category": "sites",
+        "type": "Site Institucional",
+        "image": "",
+        "technologies": [],
+        "link": "",
+        "published": false,
+        "order": 4
+    },
+    {
+        "id": "menu-restaurante",
+        "title": "Menu Restaurante",
+        "description": "Catálogo digital interativo com pedidos pelo WhatsApp.",
+        "category": "catalogos",
+        "type": "Catálogo Digital",
+        "image": "",
+        "technologies": [],
+        "link": "",
+        "published": false,
+        "order": 5
+    },
+    {
+        "id": "imersao-marketing",
+        "title": "Imersão Marketing",
+        "description": "Página de captura com integração de marketing.",
+        "category": "landing-pages",
+        "type": "Landing Page",
+        "image": "",
+        "technologies": [],
+        "link": "",
+        "published": false,
+        "order": 6
+    }
 ]
